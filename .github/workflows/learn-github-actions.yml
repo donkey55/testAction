@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: java -version
-      - run: mvn -B package --file pom.xml
+      - run: mvn --batch-mode --update-snapshots verify
       - run: echo "Begin Build！"
       - run: mvn compile
       - run: echo "Build End !"
