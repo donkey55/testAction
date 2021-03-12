@@ -6,3 +6,8 @@ jobs:
     steps:
       - run: java -version
       - run: mvn -v
+      - run: echo "Begin Build！"
+      - run: mvn compile
+      - run: echo "Build End !"
+      - run: mvn test
+      - run: echo "Test Success!"
